@@ -42,7 +42,6 @@ Instructions d'utilisation:
 7) (Optionnel) Pour effectuer une opération avec le résultat, retourner à l'étape 
 
 Instruction de Tests:
-Coming soon!
 Pour exécuter un test individuel:
 python -m pytest tests/[nom_du_fichier_de_test] -v
 Pour exécuter la suite de test en entier
@@ -54,7 +53,7 @@ Pour les contributions, les normes suivantes sont en vigeur sur le projet:
 Branches:
 1) Nom de branche représentatif en français en kebab-case
 
-Voici les détails pour les Pull requests:
+Pull requests:
 1) Il est obligatoire de faire une pull-request pour mettre des modifications sur la branche "main".
 2) Le nom de la pull request doit être representatif de la tâche à faire.
 3) La pull request doit contenir une description qui explique ce qui a été accompli dans la branche.
