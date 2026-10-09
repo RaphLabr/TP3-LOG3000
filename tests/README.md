@@ -1,11 +1,13 @@
 # Readme: module "tests"
 
-Le module "tests" rassemble les tests couvrant les opérateurs
+Le module "tests" rassemble les tests couvrant les opérateurs, la fonction calculate
 
 ## Fichiers du module
 test_operators.py
-
 Le fichier test_operators.py permet de tester le fonctionnement des 4 opérateurs (add, subtract, multiply et divide)
+
+test_calculate.py
+Le fichier test_calculate.py permet de tester le fonctionnement de la fonction calculate utilisée dans app.py
 
 ## Exécution des tests
 Pour exécuter les tests d'un fichier spécifique, utilisez la commande suivante depuis la racine du projet :
