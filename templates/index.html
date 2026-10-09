@@ -38,11 +38,27 @@
 
 <script>
    function appendToDisplay(value) {
+      /**
+      Args:
+      value: string 
+
+      Returns:
+      None
+      This function appends a character to the calculator display.
+      */
       const display = document.getElementById('display');
       display.value += value;
    }
 
    function clearDisplay() {
+      /**
+      Args:
+      None 
+
+      Returns:
+      None
+      This function clears the calculator display.
+      */
       document.getElementById('display').value = '';
    }
 </script>
