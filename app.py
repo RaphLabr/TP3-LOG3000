@@ -11,6 +11,15 @@ OPS = {
 }
 
 def calculate(expr: str):
+    """
+    Args:
+    expr: str
+
+    Returns:
+    float
+    This function validates a mathematical expression, extracts its operands and operator,
+    and performs the corresponding calculation to return the result
+    """
     if not expr or not isinstance(expr, str):
         raise ValueError("empty expression")
 
@@ -43,6 +52,15 @@ def calculate(expr: str):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    """
+    Args:
+    None
+
+    Returns:
+    HTML response
+    This function handles requests to the main page, including processing user input, 
+    displaying the calculator and returning the result or an error
+    """
     result = ""
     if request.method == 'POST':
         expression = request.form.get('display', '')
