@@ -20,7 +20,7 @@ def subtract(a,b):
     float
     This function subtracts two numbers and returns the result
     """
-    return b - a
+    return a - b
 
 def multiply(a,b):
     """
@@ -32,7 +32,7 @@ def multiply(a,b):
     float
     This function multiplies two numbers and returns the result
     """
-    return a ** b
+    return a * b
 
 def divide(a,b):
     """
@@ -44,4 +44,4 @@ def divide(a,b):
     float
     This function divides two numbers and returns the result
     """
-    return a // b
+    return a / b
