@@ -1,4 +1,5 @@
 from operators import add, subtract, multiply, divide
+import pytest
 
 
 def test_add():
@@ -50,4 +51,5 @@ def test_divide():
     assert divide(6, 3) == 2
     assert divide(7.5, 2.5) == 3.0
     assert divide(7, 2) == 3.5
-    assert divide(5, 0) == "Error: Division by zero"
+    with pytest.raises(ZeroDivisionError):
+        divide(5, 0)
