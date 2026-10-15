@@ -44,4 +44,7 @@ def divide(a,b):
     float
     This function divides two numbers and returns the result
     """
-    return a / b
+    if b == 0:
+        raise ZeroDivisionError("Division by zero is not allowed")
+    else:
+        return a / b
