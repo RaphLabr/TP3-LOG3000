@@ -1,5 +1,6 @@
 # Readme: module "tests"
 
+## Description du module
 Le module "tests" rassemble les tests couvrant les opérateurs, la fonction calculate
 
 ## Fichiers du module

@@ -1,6 +1,6 @@
 # Readme: module "templates"
 
-## Objectif du module
+## Description du module
 Le module "template" rassemble le code HTML de l'application
 
 ## Fichiers du module

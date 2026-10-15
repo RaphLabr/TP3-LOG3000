@@ -1,6 +1,6 @@
 # Readme: module "static"
 
-## Objectif du module
+## Description du module
 Le module "static" rassemble le code CSS de l'application qui dicte les règles d'affichage des éléments html de l'application
 
 ## Fichiers du module
