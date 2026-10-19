@@ -30,6 +30,8 @@ def calculate(expr: str):
 
     for i, ch in enumerate(s):
         if ch in OPS:
+            if ch in "+-" and i > 0 and s[i - 1] in "eE":
+                continue
             if op_pos != -1:
                 raise ValueError("only one operator is allowed")
             op_pos = i

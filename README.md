@@ -39,7 +39,7 @@ Le but de ce projet est d'implémenter une calculatrice web afin de permettre au
 
 6. Appuyer sur le bouton = pour obtenir le résultat de l'opération
 
-7. (Optionnel) Pour effectuer une opération avec le résultat, retourner à l'étape 
+7. (Optionnel) Pour effectuer une opération avec le résultat, retourner à l'étape 4
 
 ## Instruction de Tests:
 Pour exécuter un test individuel:
