@@ -26,6 +26,34 @@ def test_calculate_decimal_numbers():
     assert calculate("2.5+1.5") == 4.0
 
 
+def test_calculate_scientific_notation_operands():
+    """
+    Args:
+    None
+
+    Returns:
+    None
+    This test verifies that calculate accepts operands in scientific notation
+    """
+    assert calculate("1e+20+1") == 1e20
+    assert calculate("1e-07*2") == 2e-7
+
+
+def test_calculate_scientific_notation_result_can_be_reused():
+    """
+    Args:
+    None
+
+    Returns:
+    None
+    This test verifies that a scientific-notation result can be reused
+    in another expression
+    """
+    result = calculate("100000000000000000000*1")
+
+    assert calculate(f"{result}+1") == 1e20
+
+
 def test_calculate_empty_expression():
     """
     Args:
