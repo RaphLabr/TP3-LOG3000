@@ -10,6 +10,9 @@ Le fichier test_operators.py permet de tester le fonctionnement des 4 opérateur
 test_calculate.py
 Le fichier test_calculate.py permet de tester le fonctionnement de la fonction calculate utilisée dans app.py
 
+test_app.py
+Le fichier test_app.py permet de tester le fonctionnement de l'application web, en vérifiant qu'elle répond correctement aux reponses HTTP.
+
 ## Exécution des tests
 Pour exécuter les tests d'un fichier spécifique, utilisez la commande suivante depuis la racine du projet :
 

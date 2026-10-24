@@ -107,6 +107,7 @@ def test_calculate_multiple_operators():
     """
     with pytest.raises(ValueError):
         calculate("5+3-2")
+    with pytest.raises(ValueError):
         calculate("5+*2")
 
 
@@ -121,3 +122,49 @@ def test_calculate_non_numeric_operand():
     """
     with pytest.raises(ValueError):
         calculate("abc+3")
+
+def test_calculate_subtraction():
+    """
+    Args:
+    None
+
+    Returns:
+    None
+    This test verifies that the calculate function can handle subtraction
+    """
+    assert calculate("5-3") == 2.0
+
+def test_calculate_multiplication():
+    """
+    Args:
+    None
+
+    Returns:
+    None
+    This test verifies that the calculate function can handle multiplication
+    """
+    assert calculate("5*3") == 15.0
+
+def test_calculate_division():
+    """
+    Args:
+    None
+
+    Returns:
+    None
+    This test verifies that the calculate function can handle division
+    """
+    assert calculate("6/3") == 2.0
+    assert calculate("7/2") == 3.5
+
+def test_calculate_division_by_zero():
+    """
+    Args:
+    None
+
+    Returns:
+    None
+    This test verifies that dividing by zero raises a ZeroDivisionError
+    """
+    with pytest.raises(ZeroDivisionError):
+        calculate("5/0")
