@@ -64,13 +64,19 @@ def index():
     displaying the calculator and returning the result or an error
     """
     result = ""
+    result_is_calculation = False
     if request.method == 'POST':
         expression = request.form.get('display', '')
         try:
             result = calculate(expression)
+            result_is_calculation = True
         except Exception as e:
             result = f"Error: {e}"
-    return render_template('index.html', result=result)
+    return render_template(
+        'index.html',
+        result=result,
+        result_is_calculation=result_is_calculation,
+    )
 
 if __name__ == '__main__':
     app.run(debug=True)
