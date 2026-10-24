@@ -37,6 +37,8 @@
 </div>
 
 <script>
+   let resultDisplayed = {{ result_is_calculation | tojson }};
+
    function appendToDisplay(value) {
       /**
       Args:
@@ -47,8 +49,12 @@
       This function appends a character to the calculator display.
       */
       const display = document.getElementById('display');
+      if (resultDisplayed && !['+', '-', '*', '/'].includes(value)) {
+         display.value = '';
+      }
       display.value += value;
       display.scrollLeft = display.scrollWidth;
+      resultDisplayed = false;
    }
 
    function clearDisplay() {
@@ -61,6 +67,7 @@
       This function clears the calculator display.
       */
       document.getElementById('display').value = '';
+      resultDisplayed = false;
    }
 </script>
 </body>
